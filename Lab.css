@@ -30,3 +30,32 @@ Focus on applying proper CSS techniques such as:
 - Alignment
 
 */
+
+
+/* BACKGROUND */
+body {
+   background-color: #816E4F;
+}
+
+
+/* NORMALIZATION OF TYPOGRAPHY */
+h1, h2, h3 {
+   color: #202D2F;
+}
+
+
+p, li {
+   color: #F6F2D5;
+}
+
+
+header, footer, .coffee {
+   margin-left: 6rem;
+   margin-right: 6rem;
+}
+
+
+/* SECTION SPACING */
+.coffee {
+   margin-bottom: 4rem;
+}
