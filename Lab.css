@@ -34,28 +34,78 @@ Focus on applying proper CSS techniques such as:
 
 /* BACKGROUND */
 body {
-   background-color: #816E4F;
+   background-color: #201B09;
 }
 
 
 /* NORMALIZATION OF TYPOGRAPHY */
 h1, h2, h3 {
-   color: #202D2F;
+   color: #201B09;
+}
+
+/* removes the default color of the hyperlinks*/
+a {
+   color: inherit;
+   text-decoration: none;
 }
 
 
-p, li {
-   color: #F6F2D5;
+/* normalized consistent font color for paragraph texts, list items, and hyperlinks */
+p, li , a{
+   color: #F3E9DC;
 }
 
 
-header, footer, .coffee {
-   margin-left: 6rem;
-   margin-right: 6rem;
+/* when cursor is hovering over a hyperlink */
+a:hover {
+   color: #5E3023;
+   text-decoration: underline;
 }
 
+
+
+header, footer {
+   background-color: #865E38;
+   width: 100%;   /* sets the width of the header and footer to fill the x-axis of the screen*/
+
+   padding-left: 6rem;
+   padding-right: 6rem;
+
+   box-sizing: border-box;
+}
+
+
+/* HEADER ELEMENTS */
+header {
+   padding: 2rem 6rem;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+#title {
+   margin: 0 auto; /* extra assurance for centering*/
+}
+
+/* setting the hr (horizontal break) to match colors with the title*/
+hr {
+   border: 0;
+   border-top: 1px solid #201B09;
+}
 
 /* SECTION SPACING */
 .coffee {
+   margin-left: 6rem;
+   margin-right: 6rem;
    margin-bottom: 4rem;
+   min-height: 80vh;
+}
+
+
+/* NAVBAR */
+.navBar {
+   border: solid white;
+   padding: 10px;
+   display: flex;
+   justify-content: flex-end;
+   gap: 10px;
 }
