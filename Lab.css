@@ -109,3 +109,46 @@ hr {
    justify-content: flex-end;
    gap: 10px;
 }
+
+/*Start of About page section*/
+
+.about .coffee img[alt="VAB Coffee Shop Logo"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.about .definition p {
+   display: block;
+   margin: 0 auto;
+}
+
+.about table {
+  width: 100%;
+  border-collapse: collapse;}
+
+.about table tr {
+  display: table-row;
+}
+
+.about table td {
+  text-align: center;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.about .teamMember {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about .label {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+/*End of about page sectiom */
