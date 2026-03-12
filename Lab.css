@@ -71,7 +71,6 @@ img[alt="Coffee Banner"] {
 
 
 header, footer {
-   background-color: #865E38;
    width: 100%;   /* sets the width of the header and footer to fill the x-axis of the screen*/
 
    padding-left: 6rem;
@@ -83,6 +82,8 @@ header, footer {
 
 /* HEADER ELEMENTS */
 header {
+   background-color: #865E38;
+
    padding: 2rem 6rem;
    box-sizing: border-box;
    text-align: center;
@@ -90,6 +91,7 @@ header {
 
 header h1 {
    color: #F3E9DC;
+   font-size: 1.5cm;
 }
 
 #title {
@@ -99,8 +101,9 @@ header h1 {
 /* setting the hr (horizontal break) to match colors with the title*/
 hr {
    border: 0;
-   border-top: 1px solid #201B09;
+   border-top: 1px solid #F3E9DC;
 }
+
 
 /* SECTION SPACING */
 .coffee {
@@ -374,11 +377,22 @@ hr {
 /*End of about page sectiom */
 
 
+/* FOOTER ELEMENTS */
 footer {
-  background-color: #865E38;
+  background-color: #DEBEA0;
   width: 100%;
   padding-left: 6rem;
   padding-right: 6rem;
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+
+  height: 150px;
+}
+
+footer p, .contacts {
+   color: #201B09;
 }
