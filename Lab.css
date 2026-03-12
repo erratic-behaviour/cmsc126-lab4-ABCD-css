@@ -126,12 +126,12 @@ hr {
 
 
 /* ORDER STUFF */
-.coffee:nth-of-type(2) {
+.order .coffee:nth-of-type(2) {
    background-color: #DEBEA0;
 }
 
 
-.coffee:nth-of-type(2) h2 {
+.order .coffee:nth-of-type(2) h2 {
    color: #F6F2D5;
    background-color: #201B09;
    padding: 10px;
@@ -143,26 +143,26 @@ hr {
 }
 
 
-.coffee:nth-of-type(2) #coffee_choices {
+.order .coffee:nth-of-type(2) #coffee_choices {
    width: 100%;
    border-collapse: collapse;
    margin: 20px auto;
 }
 
 
-.coffee:nth-of-type(2) td {
+.order .coffee:nth-of-type(2) td {
    padding: 12px;
    text-align: center;
 }
 
 
-.coffee:nth-of-type(2) td:hover {
+.order .coffee:nth-of-type(2) td:hover {
    padding: 12px;
    text-align: center;
 }
 
 
-.coffee:nth-of-type(2) .coffeeImg {
+.order .coffee:nth-of-type(2) .coffeeImg {
    width: 150px;
    height: 150px;
    object-fit: cover;
@@ -174,13 +174,13 @@ hr {
    margin: 0 auto;
 }
 
-.coffee:nth-of-type(3) {
+.order .coffee:nth-of-type(3) {
    display: flex;
    justify-content: center;
    padding: 30px;
 }
 
-.coffee:nth-of-type(3) form{
+.order .coffee:nth-of-type(3) form{
    background-color: #865E38;
    color: #DEBEA0;
 
@@ -196,8 +196,8 @@ hr {
 }
 
 
-.coffee:nth-of-type(3) form input,
-.coffee:nth-of-type(3) form select {
+.order .coffee:nth-of-type(3) form input,
+.order .coffee:nth-of-type(3) form select {
    padding: 7px 10px;
    border-radius: 8px;
    border: 1px solid #5E3023;
@@ -207,7 +207,7 @@ hr {
 }
 
 
-.coffee:nth-of-type(3) form input[type="submit"] {
+.order .coffee:nth-of-type(3) form input[type="submit"] {
    background-color: #5E3023;
    color: #F3E9DC;
    cursor: pointer;
