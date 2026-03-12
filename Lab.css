@@ -62,6 +62,12 @@ a:hover {
    text-decoration: underline;
 }
 
+img[alt="Coffee Banner"] {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
 
 
 header, footer {
@@ -145,3 +151,49 @@ hr {
    height: 120px;
    object-fit: cover;
 }
+/*Start of About page section*/
+
+.about a[href="#bottomPage"] {
+  display: block;
+  text-align: center;
+}
+
+.about .coffee img[alt="VAB Coffee Shop Logo"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.about p.definition  {
+  text-align: center;
+}
+
+.about table {
+  width: 100%;
+  border-collapse: collapse;}
+
+.about table tr {
+  display: table-row;
+}
+
+.about table td {
+  text-align: center;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.about .teamMember {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about .label {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+/*End of about page sectiom */
