@@ -103,7 +103,6 @@ hr {
    margin-left: 6rem;
    margin-right: 6rem;
    margin-bottom: 4rem;
-   min-height: 80vh;
 }
 
 
@@ -119,8 +118,17 @@ hr {
 /*Start of About page section*/
 
 .about a[href="#bottomPage"] {
-  display: block;
-  text-align: center;
+   display: block;
+   text-align: center;
+   color: #DEBEA0;
+   font-size: 0.9rem;
+   letter-spacing: 0.1em;
+   margin: 0.5rem auto;
+}
+
+.about .coffee img[alt="Aesthetic Coffee"] {
+   display: block;
+   margin: 0 auto;
 }
 
 .about .coffee img[alt="VAB Coffee Shop Logo"] {
@@ -130,6 +138,30 @@ hr {
 
 .about p.definition  {
   text-align: center;
+}
+
+.about .coffee:has(table) table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about .coffee:has(table) table tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about .coffee:has(table) table td {
+  background-color: #DEBEA0;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
 }
 
 .about table {
@@ -144,6 +176,15 @@ hr {
   text-align: center;
   padding: 10px;
   vertical-align: top;
+} 
+
+.about .coffee:has(table) table tr:first-child td,
+.about .coffee:has(table) table tr:last-child td {
+  width: 180px;
+}
+
+.about .coffee:has(table) {
+  min-height: unset;
 }
 
 .about .teamMember {
@@ -159,6 +200,64 @@ hr {
   color: white;
 }
 
+.about ul {
+   display: flex;
+   overflow-x: auto;       /* enables horizontal scrolling */
+   scroll-snap-type: x mandatory;  /* snaps to each item */
+   gap: 1rem;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   width: 100%;          
+   box-sizing: border-box;
+}
+
+.about ul li {
+   flex: 0 0 100%;         /* each item takes full width */
+   scroll-snap-align: start;
+}
+
+.about ul li img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.about ul::-webkit-scrollbar {
+  height: 4px;  /* thin scrollbar */
+}
+
+.about ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about ul::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);  /* semi-transparent */
+  border-radius: 10px;
+}
+
+.about .coffeeVideo {
+  width: 100%;
+  height: 500px;
+}
+
+.about .coffee #about {
+  text-align: center;
+  border: 2px solid #865E38;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.about .coffee:has(h2#about) {
+   text-align: center;
+   background-color: #DEBEA0;
+   width: 100%;
+   box-sizing: border-box;
+   margin-left: 0;
+   margin-right: 0;
+   
+}
 
 
 /*End of about page sectiom */
