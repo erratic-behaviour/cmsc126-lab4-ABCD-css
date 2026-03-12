@@ -94,8 +94,9 @@ hr {
 
 /* SECTION SPACING */
 .coffee {
-   margin-left: 6rem;
-   margin-right: 6rem;
+   margin: 0;
+   padding-left: 6rem;
+   padding-right: 6rem;
    margin-bottom: 4rem;
    min-height: 80vh;
 }
@@ -108,4 +109,39 @@ hr {
    display: flex;
    justify-content: flex-end;
    gap: 10px;
+}
+
+
+/* ORDER STUFF */
+.coffee:nth-of-type(2) {
+   background-color: #DEBEA0;
+}
+
+
+.coffee:nth-of-type(2) h2 {
+   color: #F6F2D5;
+   background-color: #201B09;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+
+.coffee:nth-of-type(2) #coffee_choices {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+}
+
+
+.coffee:nth-of-type(2) td {
+   padding: 12px;
+   text-align: center;
+   border: 1px solid #5E3023;
+}
+
+
+.coffee:nth-of-type(2) .coffeeImg {
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
 }
