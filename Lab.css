@@ -33,6 +33,11 @@ Focus on applying proper CSS techniques such as:
 @import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap'); /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap');
 
+/* SMOOTH BEHAVIOR */
+html {
+   scroll-behavior: smooth;
+}
+
 /* BACKGROUND */
 body {
    background-color: #201B09;
@@ -59,7 +64,7 @@ p, li , a{
 
 /* when cursor is hovering over a hyperlink */
 a:hover {
-   color: #5E3023;
+   color: #865E38;
    text-decoration: underline;
 }
 
