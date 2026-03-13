@@ -145,18 +145,6 @@ hr {
   order: 0;
 }
 
-.home .navBar {
-  order: 1;
-  margin-top: 0;
-}
-
-.home #banner {
-  order: 2;
-  width: 100%;
-  display: block;
-  padding : 1.25rem 0;
-}
-
 .home #welcome {
   order : 3 ;
   text-align: center;
@@ -342,35 +330,35 @@ hr {
    margin: 0 auto;
 }
 
+.order .coffee #coffeechoices{
+  width: 100%;
+  justify-content: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
 
-.order .coffee:nth-of-type(2) #coffee_choices {
-   width: 100%;
-   border-collapse: collapse;
-   margin: 20px auto;
+.order .coffee #coffee_choices td {
+  width: 10%;
+  text-align: center;
+  vertical-align: top;
+  padding: 8px;
 }
 
 .order .coffeeTitle {
    font-size: 1.7rem;
    font-family: "Kaisei HarunoUmi", serif;
-   color : #201B09;
-}
-
-.order #coffee_choices tr:nth-child(3) td {
-   padding-bottom: 100px;
+   color : #DEBEA0;
+   padding-top: 10px !important;
+   background: #201B09;
+   border-radius: 10px;
 }
 
 
 .order .coffee:nth-of-type(2) td {
    padding: 12px;
+   flex-wrap: wrap;
    text-align: center;
 }
-
-
-.order .coffee:nth-of-type(2) td:hover {
-   padding: 12px;
-   text-align: center;
-}
-
 
 .order .coffee:nth-of-type(2) .coffeeImg {
    width: 150px;
@@ -433,7 +421,6 @@ hr {
 
    padding: 15px;
    margin-top: 10px;
-   transition: background 0.3s;
 }
 
 
@@ -479,14 +466,12 @@ hr {
 
 .about .coffee:has(table) table tr {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 1rem;
 }
 
 .about .coffee:has(table) table td {
   background-color: #DEBEA0;
-  border-radius: 12px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -496,21 +481,11 @@ hr {
 
 .about table {
   width: 100%;
-  border-collapse: collapse;}
+  border-collapse: collapse;
+}
 
 .about table tr {
   display: table-row;
-}
-
-.about table td {
-  text-align: center;
-  padding: 10px;
-  vertical-align: top;
-} 
-
-.about .coffee:has(table) table tr:first-child td,
-.about .coffee:has(table) table tr:last-child td {
-  width: 180px;
 }
 
 .about .coffee:has(table) {
@@ -525,15 +500,16 @@ hr {
 }
 
 .about .label {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   color : #201B09;
 }
 
+/* enables horizontal scrolling */
 .about ul {
    display: flex;
-   overflow-x: auto;       /* enables horizontal scrolling */
-   scroll-snap-type: x mandatory;  /* snaps to each item */
+   overflow-x: auto;       
+   scroll-snap-type: x mandatory;  
    gap: 1rem;
    list-style: none;
    padding: 0;
@@ -543,7 +519,7 @@ hr {
 }
 
 .about ul li {
-   flex: 0 0 100%;         /* each item takes full width */
+   flex: 0 0 100%;         
    scroll-snap-align: start;
 }
 
@@ -554,17 +530,27 @@ hr {
   display: block;
 }
 
+/* thin scrollbar */
 .about ul::-webkit-scrollbar {
-  height: 4px;  /* thin scrollbar */
+  height: 10px;  
 }
 
 .about ul::-webkit-scrollbar-track {
-  background: transparent;
+  background: gray;
+  border-radius: 10px;
+  cursor: grab;
 }
 
 .about ul::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.3);  /* semi-transparent */
+  background-color: #865E38;  
   border-radius: 10px;
+  cursor: grab;
+}
+
+.about ul::-webkit-scrollbar-thumb:hover {
+  background-color: #bc8755;  
+  border-radius: 10px;
+  cursor: grab;
 }
 
 .about .coffeeVideo {
@@ -577,6 +563,16 @@ hr {
   border: 2px solid #865E38;
   padding: 0.5rem 1rem;
   display: inline-block;
+}
+
+.about img[alt="VAB Coffee Shop Logo"]{
+  border-radius: 100%;
+  border: 5px solid #DEBEA0;
+}
+
+.about img[alt="Aesthetic Coffee"]{
+  border-radius: 10px;
+  border: 15px solid #DEBEA0;
 }
 
 .about .coffee:has(h2#about) {
